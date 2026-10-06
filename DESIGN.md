@@ -261,6 +261,20 @@ Hover hit-testing is bound **strictly to the character sprite bounding box** (`2
 
 ---
 
+## Implementation Templates & Reference Files
+
+Ready-to-use production scaffolding is provided in the repository's [`skill/templates/`](./skill/templates/) directory:
+
+- **[`index.html`](./skill/templates/index.html)**: Clean HTML5 boilerplate containing the top navigation, canvas viewport, and Workstation Screen OS popup modals.
+- **[`nixel-canvas.js`](./skill/templates/nixel-canvas.js)**: 60 FPS canvas loop, character sprite renderers with ponytail physics sway, hit-testing, and dynamic A* waypoint walking routines.
+- **[`nixel-assets.js`](./skill/templates/nixel-assets.js)**: Scandinavian office fixtures (tufted sofa, arc floor lamp, oak bookshelves, potted monsteras, water dispenser, and domain-specific props).
+- **[`nixel-app.js`](./skill/templates/nixel-app.js)**: State controller handling JSON business presets, role switching, simulation triggers, and workstation OS window tabs.
+- **[`nixel-style.css`](./skill/templates/nixel-style.css)**: Design token variables for Warm Cream (`#FBF9F5`) and Obsidian Dark Mode (`#18191A`), responsive typography, and modal styling.
+
+Developers and agents can directly adopt or adapt these files to deploy a custom living workspace.
+
+---
+
 ## Do's and Don'ts
 
 ### Do's

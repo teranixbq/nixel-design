@@ -1,39 +1,26 @@
-# Installing the Nixel Skill
+# Skill Installation & Setup
 
-You can install Nixel as a reusable skill across AI agent environments (Hermes Agent, Claude Code, Cursor, or your own custom agent workflows).
+Install Nixel as a reusable skill in any AI agent framework or development workspace.
 
-## Install for Hermes Agent
+## Installation
 
-Clone this repository directly into your active Hermes skills directory:
-
-```bash
-git clone https://github.com/teranixbq/nixel-design.git ~/.hermes/skills/nixel
-```
-
-Hermes will automatically pick up the skill from `~/.hermes/skills/nixel/SKILL.md`. You can verify by running:
+### Option 1: Git Clone
+Clone directly into your AI agent's skills directory:
 
 ```bash
-hermes skills list
+git clone https://github.com/teranixbq/nixel-design.git path/to/skills/nixel
 ```
 
-## Install for Claude Code / Cursor / Windsurf
-
-Drop the `skill/` folder into your project root or your global custom tools path:
+### Option 2: Local Copy
+Copy the `skill/` folder into your repository or project tools directory:
 
 ```bash
-# Inside your project
-mkdir -p .skills/nixel
-cp -r path/to/nixel-design/skill/* .skills/nixel/
+mkdir -p skills/nixel
+cp -r path/to/nixel-design/skill/* skills/nixel/
 ```
 
-Add this rule to your `CLAUDE.md` or `.cursorrules`:
+## Structure
 
-```markdown
-When building workflow visualizations or living dashboards, refer to `.skills/nixel/SKILL.md`. Use the templates in `.skills/nixel/templates/` to scaffold the 60 FPS canvas loop, character FSM, and modular UI.
-```
-
-## What the skill provides
-
-- **`SKILL.md`**: Complete step-by-step instructions for the LLM to generate domain-appropriate floorplans, calculate sprite coordinates, and avoid hardcoding role counts.
-- **`templates/`**: Working boilerplates for the canvas engine, fixture assets, and workstation OS modals.
-- **`references/`**: Ready-to-use business JSON presets for SaaS engineering squads, e-commerce stores, and SEO content teams.
+- **`SKILL.md`**: Core procedural guide for AI agents to calculate room dimensions, generate dynamic roles, and manage worker states.
+- **`templates/`**: Starter templates for the canvas loop, character FSM with ponytail physics, Scandinavian office fixtures, and workstation OS screen popup modals.
+- **`references/`**: Business domain presets (SaaS, E-Commerce, SEO Lab) with predefined telemetry and task lists.

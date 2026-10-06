@@ -29,22 +29,24 @@ python3 -m http.server 8000
 
 Open `http://localhost:8000` in your browser.
 
-## Using as an AI Agent Skill
+## Skill Installation
 
-You can teach your AI agent how to build Nixel workspaces:
+To install Nixel as a reusable skill in your AI agent environment:
 
-### Hermes Agent
+### Method 1: Git Clone
+Clone the repository directly into your agent's skills directory:
 ```bash
-git clone https://github.com/teranixbq/nixel-design.git ~/.hermes/skills/nixel
+git clone https://github.com/teranixbq/nixel-design.git path/to/your/skills/nixel
 ```
 
-### Claude Code / Cursor / Windsurf
-Copy the `skill/` folder into your project root:
+### Method 2: Copy Folder
+Copy the `skill/` folder into your project workspace:
 ```bash
-mkdir -p .skills/nixel
-cp -r skill/* .skills/nixel/
+mkdir -p skills/nixel
+cp -r skill/* skills/nixel/
 ```
-Reference `.skills/nixel/SKILL.md` in your `CLAUDE.md` or `.cursorrules`.
+
+Your AI agent reads `SKILL.md` for layout and coordinate generation, and uses `templates/` to scaffold files.
 
 ## Project Structure
 
