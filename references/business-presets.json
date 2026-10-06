@@ -1,0 +1,92 @@
+{
+  "ecommerce_store": {
+    "title": "E-COMMERCE & DIRECT-TO-CONSUMER OPERATIONS",
+    "roles": [
+      {
+        "id": 1,
+        "roomTitle": "GROWTH & ADS",
+        "employeeName": "Specialist 01",
+        "roleTitle": "Performance Marketer",
+        "currentTask": "Optimizing TikTok & Meta ad creatives and bidding funnels",
+        "liveMetric": "ROAS: 4.8x | $12.4k Spend",
+        "accentColor": "#445963",
+        "idleSpot": "water_cooler"
+      },
+      {
+        "id": 2,
+        "roomTitle": "STOREFRONT & MERCH",
+        "employeeName": "Specialist 02",
+        "roleTitle": "Merchandising Lead",
+        "currentTask": "Updating seasonal catalog collections and product variants",
+        "liveMetric": "Conversion: 3.8% | 1,420 SKUs",
+        "accentColor": "#8C581E",
+        "idleSpot": "sofa_lounge"
+      },
+      {
+        "id": 3,
+        "roomTitle": "INVENTORY & LOGISTICS",
+        "employeeName": "Specialist 03",
+        "roleTitle": "Fulfillment Coordinator",
+        "currentTask": "Dispatching automated warehouse pick-and-pack batches",
+        "liveMetric": "Fulfillment: 99.4% On-Time",
+        "accentColor": "#3C5C48",
+        "idleSpot": "espresso_bar"
+      },
+      {
+        "id": 4,
+        "roomTitle": "CUSTOMER EXPERIENCE",
+        "employeeName": "Specialist 04",
+        "roleTitle": "Support Strategist",
+        "currentTask": "Triaging priority ticket queue and automated returns",
+        "liveMetric": "CSAT: 98.2% | SLA < 5m",
+        "accentColor": "#944530",
+        "idleSpot": "whiteboard"
+      }
+    ]
+  },
+  "saas_product_team": {
+    "title": "AUTONOMOUS SOFTWARE ENGINEERING SQUAD",
+    "roles": [
+      {
+        "id": 1,
+        "roomTitle": "PRODUCT SPEC & UX",
+        "employeeName": "Specialist 01",
+        "roleTitle": "Product Designer",
+        "currentTask": "Validating user onboarding flows and component design tokens",
+        "liveMetric": "Figma Synced | 42 Components",
+        "accentColor": "#8C581E",
+        "idleSpot": "whiteboard"
+      },
+      {
+        "id": 2,
+        "roomTitle": "BACKEND API LAB",
+        "employeeName": "Specialist 02",
+        "roleTitle": "Systems Architect",
+        "currentTask": "Scaling distributed event queue and PostgreSQL read replicas",
+        "liveMetric": "p99 Latency: 12ms",
+        "accentColor": "#445963",
+        "idleSpot": "espresso_bar"
+      },
+      {
+        "id": 3,
+        "roomTitle": "FRONTEND & WEBGL",
+        "employeeName": "Specialist 03",
+        "roleTitle": "UI Engineer",
+        "currentTask": "Profiling 60 FPS canvas loop and DOM tree optimizations",
+        "liveMetric": "Bundle: 42kB | Zero Layout Shifts",
+        "accentColor": "#944530",
+        "idleSpot": "sofa_lounge"
+      },
+      {
+        "id": 4,
+        "roomTitle": "QA & RELEASE PIPELINE",
+        "employeeName": "Specialist 04",
+        "roleTitle": "DevOps Engineer",
+        "currentTask": "Deploying zero-downtime canary release to edge clusters",
+        "liveMetric": "Pipeline: Passed (248 tests)",
+        "accentColor": "#3C5C48",
+        "idleSpot": "water_cooler"
+      }
+    ]
+  }
+}

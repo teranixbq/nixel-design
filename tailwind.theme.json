@@ -1,0 +1,91 @@
+{
+  "theme": {
+    "extend": {
+      "colors": {
+        "primary": "#4f46e5",
+        "primary-hover": "#4338ca",
+        "primary-soft": "#eef2ff",
+        "neutral-bg": "#f8fafc",
+        "neutral-surface": "#ffffff",
+        "neutral-subtle": "#f1f5f9",
+        "neutral-border": "#e2e8f0",
+        "neutral-border-focus": "#cbd5e1",
+        "text-main": "#0f172a",
+        "text-muted": "#475569",
+        "text-subtle": "#64748b",
+        "accent-cyan": "#0369a1",
+        "accent-cyan-soft": "#e0f2fe",
+        "accent-purple": "#7e22ce",
+        "accent-purple-soft": "#f3e8ff",
+        "accent-amber": "#b45309",
+        "accent-amber-soft": "#fef3c7",
+        "accent-emerald": "#047857",
+        "accent-emerald-soft": "#d1fae5"
+      },
+      "fontFamily": {
+        "h1": [
+          "Plus Jakarta Sans"
+        ],
+        "h2": [
+          "Plus Jakarta Sans"
+        ],
+        "body-md": [
+          "Plus Jakarta Sans"
+        ],
+        "body-sm": [
+          "Plus Jakarta Sans"
+        ],
+        "code-mono": [
+          "JetBrains Mono"
+        ]
+      },
+      "fontSize": {
+        "h1": [
+          "1.75rem",
+          {
+            "letterSpacing": "-0.03em",
+            "fontWeight": "800"
+          }
+        ],
+        "h2": [
+          "1.25rem",
+          {
+            "letterSpacing": "-0.02em",
+            "fontWeight": "700"
+          }
+        ],
+        "body-md": [
+          "0.9375rem",
+          {
+            "fontWeight": "400"
+          }
+        ],
+        "body-sm": [
+          "0.8125rem",
+          {
+            "fontWeight": "500"
+          }
+        ],
+        "code-mono": [
+          "0.75rem",
+          {
+            "fontWeight": "600"
+          }
+        ]
+      },
+      "borderRadius": {
+        "sm": "6px",
+        "md": "10px",
+        "lg": "16px",
+        "pill": "9999px"
+      },
+      "spacing": {
+        "xs": "4px",
+        "sm": "8px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px"
+      }
+    }
+  }
+}

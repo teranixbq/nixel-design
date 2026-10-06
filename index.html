@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIXEL - Dynamic Vector-Pixel Workspace Studio</title>
+  <link rel="stylesheet" href="./css/nixel-office.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="top-nav">
+    <div class="brand-wrap">
+      <div class="brand-badge">NX</div>
+      <div class="brand-text">Nixel<span style="color:var(--accent-terracotta)">.studio</span></div>
+      <span style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:var(--bg-card-subtle); color:var(--text-muted); border:1px solid var(--border-subtle);">
+        DYNAMIC WORKSPACE V4
+      </span>
+    </div>
+
+    <div class="nav-controls">
+      <!-- Business Domain Switcher -->
+      <select id="businessDomainSelect" class="theme-toggle-btn" style="cursor:pointer; font-weight:700;">
+        <option value="seo">Domain: SEO &amp; Content Engine</option>
+        <option value="ecommerce">Domain: E-Commerce &amp; DTC Store</option>
+        <option value="saas">Domain: SaaS Engineering Squad</option>
+      </select>
+
+      <button id="themeToggleBtn" class="theme-toggle-btn">
+        <span>🌙 Dark Mode</span>
+      </button>
+      <button class="btn-action" onclick="simulateOfficeWork()">
+        <span>⚡ Run Simulation</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Workspace -->
+  <main class="main-wrap">
+
+    <!-- Hero Introduction -->
+    <section class="hero-row">
+      <div>
+        <h1 id="heroTitle" class="hero-title">Dynamic Living Workspace: <span>Autonomous Team &amp; Break Lounge</span></h1>
+        <p id="heroSub" class="hero-sub">
+          Architectural vector-pixel layout with authentic tufted sofa, water cooler, and ergonomic workstations. Click any worker's computer to open their Computer Screen OS (Logs, To-Dos &amp; Schedule). Dark mode preserves the illuminated studio floor!
+        </p>
+      </div>
+      <div>
+        <button class="theme-toggle-btn" onclick="simulateOfficeWork()">
+          <span>▶ Play Simulation</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Canvas Frame -->
+    <section class="office-frame">
+      <div class="office-header">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="width:8px; height:8px; border-radius:50%; background:var(--accent-sage);"></span>
+          <span id="canvasHeaderLabel">NIXEL LIVING OFFICE (CLICK DESK COMPUTERS TO OPEN WORKSTATION SCREEN)</span>
+        </div>
+        <div class="room-legend">
+          <div class="legend-tag"><span class="legend-dot" style="background:#445963;"></span> Suite 01</div>
+          <div class="legend-tag"><span class="legend-dot" style="background:#8c581e;"></span> Suite 02</div>
+          <div class="legend-tag"><span class="legend-dot" style="background:#3c5c48;"></span> Suite 03</div>
+          <div class="legend-tag"><span class="legend-dot" style="background:#944530;"></span> Suite 04</div>
+        </div>
+      </div>
+
+      <div class="canvas-box">
+        <canvas id="officeCanvas"></canvas>
+
+        <!-- Concise Character Hover Tooltip -->
+        <div id="inspectTooltip" class="inspect-tooltip">
+          <div id="ttRole" class="tt-role">KEYWORD ANALYST</div>
+          <div id="ttName" class="tt-name">Specialist 01</div>
+          <div id="ttAct" class="tt-act">
+            <span id="ttActDot" class="tt-act-dot" style="background:var(--accent-sage);"></span>
+            <span id="ttActText">Working at workstation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Dynamic Role Cards -->
+    <section id="roleCardsGrid" class="cards-row">
+      <!-- Injected dynamically by nixel-office-app.js -->
+    </section>
+
+    <!-- Real-time Console Log -->
+    <section class="console-box">
+      <div class="console-header">
+        <span>INTER-DEPARTMENT TELEMETRY &amp; ACTIVITY LOG</span>
+        <span style="color:var(--accent-sage);">● SYSTEM CONNECTED</span>
+      </div>
+      <div id="consoleContent" class="console-lines">
+        <!-- Injected dynamically by nixel-office-app.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal: Realistic Workstation Computer Screen OS -->
+  <div id="computerScreenModal" class="modal-overlay">
+    <div class="screen-window">
+      <!-- OS Window Titlebar -->
+      <div class="screen-titlebar">
+        <div class="screen-window-controls">
+          <span id="screenCloseBtn" class="ctrl-dot ctrl-red" title="Close Screen"></span>
+          <span class="ctrl-dot ctrl-yellow"></span>
+          <span class="ctrl-dot ctrl-green"></span>
+        </div>
+        <div id="screenSysInfo" class="screen-sysinfo">WORKSTATION OS · SPECIALIST 01</div>
+        <span id="screenSuiteBadge" style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; color:var(--accent-sage);">
+          ● ACTIVE
+        </span>
+      </div>
+
+      <!-- OS App Navigation Tabs -->
+      <div class="screen-tabs">
+        <button class="screen-tab-btn active" data-tab="logs" onclick="switchScreenTab('logs')">📋 Activity Logs</button>
+        <button class="screen-tab-btn" data-tab="todos" onclick="switchScreenTab('todos')">☑️ Task Checklist</button>
+        <button class="screen-tab-btn" data-tab="schedule" onclick="switchScreenTab('schedule')">📅 Upcoming Schedule</button>
+      </div>
+
+      <!-- Screen Main Display Body -->
+      <div id="screenBodyContent" class="screen-body">
+        <!-- Injected dynamically based on selected tab and active role -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modular Scripts -->
+  <script src="./js/nixel-office-assets.js"></script>
+  <script src="./js/nixel-office-canvas.js"></script>
+  <script src="./js/nixel-office-app.js"></script>
+</body>
+</html>

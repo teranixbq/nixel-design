@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="nixelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.12" />
+    </filter>
+  </defs>
+  <!-- Background Rounded Canvas -->
+  <rect width="240" height="240" rx="48" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#softShadow)" />
+  <!-- Nixel Geometric Grid & Pixel Hybrid Glyph -->
+  <!-- Vector Contour -->
+  <path d="M54 60 C 54 50, 62 42, 72 42 L 86 42 L 86 198 L 62 198 C 52 198, 54 190, 54 180 Z" fill="url(#nixelGrad)" />
+  <path d="M154 42 L 178 42 C 188 42, 186 50, 186 60 L 186 180 C 186 190, 178 198, 168 198 L 154 198 Z" fill="url(#nixelGrad)" />
+  <!-- Pixel Hybrid Diagonal Staircase -->
+  <rect x="86" y="66" width="24" height="24" rx="4" fill="#4F46E5" />
+  <rect x="110" y="90" width="24" height="24" rx="4" fill="#6366F1" />
+  <rect x="130" y="114" width="24" height="24" rx="4" fill="#0284C7" />
+  <rect x="150" y="138" width="24" height="24" rx="4" fill="#0EA5E9" />
+  <!-- Center Accent Light Dot -->
+  <circle cx="122" cy="102" r="4" fill="#FFFFFF" />
+</svg>
